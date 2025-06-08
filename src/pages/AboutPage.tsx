@@ -1,87 +1,62 @@
 export default function AboutPage() {
     return (
         <main className="bg-black text-white min-h-screen">
-            <section className="flex flex-col items-center gap-8 px-4 py-8 max-w-4xl mx-auto">
+            <section className="flex flex-col items-center gap-8 px-4 py-12 max-w-3xl mx-auto">
                 {/* header */}
-                <div className="text-center space-y-6">
-                    <h1 className="text-4xl font-bold tracking-widest">
+                <div className="text-center space-y-4">
+                    <h1 className="text-3xl sm:text-4xl font-bold tracking-widest">
                         about <span className="italic">tyFont</span>
                     </h1>
-                    <p className="text-xl opacity-75 max-w-2xl leading-relaxed">
-                        a simple web tool for creating fancy text and decorative styles
+                    <p className="text-lg sm:text-xl opacity-75 leading-relaxed">
+                        transform your text into fancy unicode fonts and decorative styles
                     </p>
                 </div>
 
                 {/* main content */}
-                <div className="w-full space-y-8">
-                    <div className="border-2 border-white rounded-xl p-8 space-y-6 text-center">
-                        <h2 className="text-2xl font-bold tracking-wide">what is tyFont?</h2>
-                        <div className="space-y-4 text-lg leading-relaxed">
-                            <p>
-                                tyFont transforms your regular text into stylish Unicode fonts and decorative borders.
-                                perfect for social media, design projects, and anywhere you want your text to stand out.
-                            </p>
-                            <p>
-                                all transformations happen in your browser - no registration required, 
-                                completely free to use, and your text never leaves your device.
-                            </p>
-                        </div>
+                <div className="w-full space-y-6">
+                    <div className="border border-white rounded-lg p-6 sm:p-8 text-center">
+                        <p className="text-base sm:text-lg leading-relaxed mb-4">
+                            type your text, pick a style, click to copy. that's it.
+                        </p>
+                        <p className="text-sm opacity-75">
+                            works entirely in your browser • no registration • completely free
+                        </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="border-2 border-white rounded-xl p-6 text-center">
-                            <h3 className="text-xl font-bold tracking-wide mb-4">features</h3>
-                            <ul className="space-y-2 text-left">
-                                <li>• 18+ Unicode font styles</li>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="border border-white rounded-lg p-4 sm:p-6">
+                            <h3 className="text-lg font-bold mb-3">what you get</h3>
+                            <ul className="space-y-1 text-sm">
+                                <li>• 25+ unicode fonts</li>
                                 <li>• 30+ decorative borders</li>
                                 <li>• one-click copying</li>
                                 <li>• real-time preview</li>
                                 <li>• mobile friendly</li>
-                                <li>• completely free</li>
                             </ul>
                         </div>
 
-                        <div className="border-2 border-white rounded-xl p-6 text-center">
-                            <h3 className="text-xl font-bold tracking-wide mb-4">perfect for</h3>
-                            <ul className="space-y-2 text-left">
-                                <li>• social media posts</li>
-                                <li>• Instagram bios</li>
+                        <div className="border border-white rounded-lg p-4 sm:p-6">
+                            <h3 className="text-lg font-bold mb-3">great for</h3>
+                            <ul className="space-y-1 text-sm">
+                                <li>• social media</li>
                                 <li>• discord messages</li>
+                                <li>• instagram bios</li>
                                 <li>• design projects</li>
                                 <li>• presentations</li>
-                                <li>• creative writing</li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div className="border-2 border-white rounded-xl p-6 text-center">
-                        <h3 className="text-xl font-bold tracking-wide mb-4">how it works</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                            <div className="space-y-2">
-                                <div className="text-lg font-bold">1. type</div>
-                                <p className="opacity-75">enter your text in the input field</p>
-                            </div>
-                            <div className="space-y-2">
-                                <div className="text-lg font-bold">2. choose</div>
-                                <p className="opacity-75">pick from fonts or decorative styles</p>
-                            </div>
-                            <div className="space-y-2">
-                                <div className="text-lg font-bold">3. copy</div>
-                                <p className="opacity-75">click any style to copy to clipboard</p>
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* footer */}
-                <div className="text-center space-y-4 mt-12">
-                    <p className="text-sm opacity-75">
-                        built with react & typescript • completely open source • no tracking
+                <div className="text-center space-y-3 mt-8">
+                    <p className="text-xs opacity-60">
+                        built with react & typescript • open source • no tracking
                     </p>
-                    <div className="flex flex-wrap justify-center gap-4 text-xs">
-                        <span className="border border-white rounded px-3 py-1">privacy first</span>
-                        <span className="border border-white rounded px-3 py-1">works offline</span>
-                        <span className="border border-white rounded px-3 py-1">no ads</span>
+                    <div className="flex flex-wrap justify-center gap-2 text-xs">
+                        <span className="border border-white/50 rounded px-2 py-1 opacity-75">privacy first</span>
+                        <span className="border border-white/50 rounded px-2 py-1 opacity-75">no ads</span>
+                        <span className="border border-white/50 rounded px-2 py-1 opacity-75">works offline</span>
                     </div>
                 </div>
             </section>
